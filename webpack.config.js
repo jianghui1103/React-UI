@@ -5,6 +5,9 @@ module.exports = {
     entry: { // 入口
         DiamondUI: './lib/index.tsx'
     },
+    resolve: {
+        extensions: ['.ts','.tsx','.js','.jsx']
+    },
     output: { // 输出
         path: path.resolve(__dirname, 'dist/lib'), 
         library: 'DiamondUI',
