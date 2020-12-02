@@ -1,7 +1,6 @@
 const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
-    mode: 'production', // 生产模式
+    // mode: 'production', // 生产模式
     entry: { // 入口
         DiamondUI: './lib/index.tsx'
     },
@@ -21,24 +20,24 @@ module.exports = {
             }
         ]
     },
-    plugins: [
-        new HtmlWebpackPlugin({
-            title: 'ReactUI',
-            template: 'index.html'
-        })
-    ],
-    externals: {
-        react: {
-            commonjs: 'react',
-            commonjs2: 'react',
-            amd: 'react',
-            root: 'React',
-        },
-        'react-dom': {
-            commonjs: 'react-dom',
-            commonjs2: 'react-dom',
-            amd: 'react-dom',
-            root: 'react-dom',
-        },
-    }
+    // plugins: [
+    //     new HtmlWebpackPlugin({
+    //         title: 'ReactUI',
+    //         template: 'index.html'
+    //     })
+    // ],
+    // externals: {
+    //     react: {
+    //         commonjs: 'react',
+    //         commonjs2: 'react',
+    //         amd: 'react',
+    //         root: 'React',
+    //     },
+    //     'react-dom': {
+    //         commonjs: 'react-dom',
+    //         commonjs2: 'react-dom',
+    //         amd: 'react-dom',
+    //         root: 'react-dom',
+    //     },
+    // }
 }
