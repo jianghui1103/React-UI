@@ -17,6 +17,9 @@ module.exports = {
             {
                 test: /\.tsx?$/, //  如果是tsx 使用loader翻译成js
                 loader: 'awesome-typescript-loader'
+            },{
+                test: /\.svg$/,
+                loader: 'svg-sprite-loader',
             }
         ]
     },

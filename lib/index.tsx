@@ -1,6 +1,11 @@
-import React from 'react';
-import ReactDom from 'react-dom'
-import Button from './button'
+import ReactDOM from 'react-dom'
+import React from 'react'
+import Icon from './icon'
 
-ReactDom.render(<Button></Button>,document.body)
+var childNode = document.createElement('div')
+childNode.setAttribute('id','root')
+document.body.appendChild(childNode)
 
+ReactDOM.render(<div>
+    <Icon name="wechat"/>
+</div>, document.getElementById('root'))
