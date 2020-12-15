@@ -2,7 +2,7 @@ const path = require('path')
 module.exports = {
     // mode: 'production', // 生产模式
     entry: { // 入口
-        DiamondUI: './lib/index.tsx'
+        DiamondUI: './example.tsx'
     },
     resolve: {
         extensions: ['.ts','.tsx','.js','.jsx']
